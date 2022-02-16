@@ -1,0 +1,197 @@
+ /* img {
+  width: 500px;
+ height: 700px;
+} */
+
+/*
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: rgba(221, 221, 221, 0.568);
+  color: black;
+}
+
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+} */
+
+#header a:hover {
+  background-color: #f2f2f2;
+}
+.big_header
+{
+    top:0px;
+    /*position:fixed;*/
+    width:100%;
+    background-color:  #F7CAC9;
+}
+.sticky_header
+{
+    top:0px;
+    position:fixed;
+    width:100%;
+}
+h1
+{
+    margin-top:50px;
+    color:#585858;
+    font-size:55px;
+}
+
+.el{
+    display: inline;
+}
+
+.el a {
+    color: yellow;
+    text-decoration: none;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-size: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+#js-components{
+  display: block;
+  text-align: center;
+}
+nav.navbar.navbar-inverse
+{
+  padding: 0vh;
+  margin: 0vh 0vh 0vh;
+}
+ul#list-items.form-inline{
+  padding:0vh;
+  margin: 0vh;
+}
+
+
+/*for the TABLES*/
+
+table,
+thead,
+td {
+    border-collapse: collapse;
+
+}
+
+.achiev table {
+    background-color: #F0EAD6;
+}
+
+.achiev thead {
+    background-color:#7FCDCD;
+}
+
+.achiev td {
+    border: 1px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    padding: 5px
+}
+
+.achiev th {
+    border: 2px solid black;
+    padding: 5px
+}
+
+.achiev table {
+    border: 2px solid black;
+}
+
+.interest_table th {
+    margin: 2px;
+    text-align: left;
+    font-weight: normal;
+    width: 20%;
+}
+
+.interest_table table {
+    width: 100%
+}
+
+.items {
+    margin: 1px;
+    box-shadow: 1px 1px rgb(255, 107, 181, .15);
+    height: 40px;
+}
+
+.items:not(.active_1):hover {
+    background-color: rgb(255, 107, 181, .55);
+}
+
+.active_1 {
+    background-color: rgb(255, 107, 181);
+}
+
+.non_active {
+    background-color: pink;
+}
+
+
+/*Tables end*/
+
+
+/*FORMS*/
+
+
+/* A form with flexiness */
+
+#outermost_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#inner_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+#flex_children {
+    min-width: 200px;
+    max-width: 300px;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+#content{
+  text-align: center;
+}
+
+body{
+  text-align: center;
+}
+
+.tableau{
+  display:flex;justify-content: center;
+}

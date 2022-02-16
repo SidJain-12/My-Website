@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+         <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+       <script type="text/javascript" src="../js/script.js"></script>
+
+       <title> Skills </title>
+</head>
+<center>
+
+<body style="background-color:#98B4D4;">
+
+<div id="header" class="big_header">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+
+                    <ul class="form-inline">
+        
+                        <li class="el"> <a href="../html/index.html" class="active">Home</a></li>
+                        <li class="el"><a href="../html/about.html" >ABOUT</a></li>
+                        <li class="el"><a href="../html/achievements.html">Achievements</a></li>
+                        <li class="el"><a href="../html/skills.html">Skills</a></li>
+                        <li class="el"><a href="../html/contact.html">Contact Me</a></li>
+                        <li class="el"><a href="javascript:void(0);" class="icon" onclick="responsive_topnav_fun()"> <i class="fa fa-bars"></i> </a></li>
+                    </ul>
+                </div>
+            </nav>
+</div>
+</center>
+
+    <div id='content'>
+        <h1>Help me know my skills</h1>
+        <form name="skillForm" method="POST" onsubmit="return validateForm()">
+            <div id="outermost_flex">
+                <div id="inner_flex">
+                    <div id="flex_children"> <label for="Email">E-Mail</label></div>
+                    <div id="flex_children"> <input type="text" class="form-control" id="email" name="Email" placeholder="abc@xyz.com"> </div>
+                </div>
+                <div id="inner_flex">
+                    <div id="flex_children"> <label for="inputName">Name</label> </div>
+                    <div id="flex_children"> <input type="text" class="form-control" id="Name" name="Name" placeholder="Name"></div>
+                </div>
+                <div id="inner_flex">
+                    <div id="flex_children"> <label for="inputSkill">Skill</label></div>
+                    <div id="flex_children"> <input type="text" class="form-control" id="skillName" name="skillName" placeholder="Skill name"></div>
+                </div>
+                <div id="inner_flex">
+                    <div id="flex_children"> <label for="level">Level</label> </div>
+                    <div id="flex_children">
+                        <select id="level_list">
+                            <option value="Beginner">Beginner</option>
+                            <option value="Intermediate">Intermediate</option>
+                           
+                            <option value="Proficient">Proficient</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div><button type="submit" id="newE">Submit</button></div>
+        </form>
+    </div>
+     <h1>Your Responses</h1><br>
+    <div class="tableau "id="content">
+       
+        <div style="overflow-x:auto;" class="achiev">
+            <table>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Skill</th>
+                        <th rowspan="2">Level of Proficiency</th>
+                        <th colspan="2">Submitted by</th>
+                    </tr>
+                    <tr>
+                        <th>Email ID</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody id="InsertHere"> </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>
